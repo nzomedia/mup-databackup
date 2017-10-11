@@ -1,0 +1,22 @@
+{
+  "name": "mup-databackup",
+  "version": "0.1.0",
+  "description": "Backup or restore data files and settings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mup",
+    "backup",
+    "data",
+    "restore"
+  ],
+  "author": "youssouf",
+  "license": "ISC",
+  "dependencies": {
+    "joi": "^11.3.4",
+    "nodemiral": "^1.1.1",
+    "yargs": "^9.0.1"
+  }
+}
