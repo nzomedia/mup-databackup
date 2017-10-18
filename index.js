@@ -1,7 +1,7 @@
 const _commands=require("./commands");
 
 module.exports =  {
-	name: "mup-databackup",
+	name: "databackup",
     description: "Backup or restore app data and settings.",
     commands: _commands,
     hooks: {
