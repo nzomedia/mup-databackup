@@ -36,9 +36,9 @@ do
 	sourcePath=${PATHS[i]}
 	if [[ -a $sourcePath ]]
 	then
-		destinationPath="$destinationFolder"/$(echo "$sourcePath" | sed "s/\//-/g" | sed "s/^-*//").tar
+		destinationPath="$destinationFolder"/$(echo "$sourcePath" | sed "s/\//-/g" | sed "s/^-*//").tar.gz
 		printf "%-30s \t%s\t %-30s\n" $sourcePath "-->" $destinationPath
-		tar --checkpoint=10 -cf "$destinationPath" "$sourcePath"
+		tar --checkpoint=10 -acf "$destinationPath" "$sourcePath"
 	else
 		echo "Path $sourcePath do not exist, skipping it."
 	fi
